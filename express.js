@@ -8,12 +8,11 @@ function htmlConvert(p) {
 function timeCorrector(p) {
   var arr = ["January","February","March","April","May","June","July","August","September","October","November","December"];
   console.log(p);
-  console.log(p)
-  var month = p.split('%20')[0];
-  console.log(month,p.split('%20'));
+   var month = p.split('%20')[0];
   if (Number(month)) {
     month = arr[Number(month-1)];
   } else {
+  p = p.replace(/%2C/g,"");
   month = (month.length > 3 ) ? month.slice(0,3) : month;
   month = (month[0] === month[0].toUpperCase()) ? month : month[0].toUpperCase() + month.slice(1,month.length);
   var i = 0;
@@ -26,7 +25,7 @@ function timeCorrector(p) {
     }
     i++;
     }
-  if (match === false) {
+   if (match === false) {
     month = null;
     return dt = {
       "unix": null,
