@@ -56,5 +56,4 @@ app.get('/:id',function(req,res) {
   res.send(time);
 
 });
-
-app.listen(3030);
+app.listen(process.env.PORT);
