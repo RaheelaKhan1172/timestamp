@@ -1,5 +1,7 @@
 var express = require('express');
 var app = express();
+var path = require('path');
+
 
 function htmlConvert(p) {
   return encodeURIComponent(p.trim());
@@ -46,7 +48,7 @@ function timeCorrector(p) {
     "natural": month + " " + p
   }
 }
-
+app.use(express.static(path.join(__dirname,'template')));
 app.get('/:id',function(req,res) { 
   var q = req.params.id;
   q = htmlConvert(q);

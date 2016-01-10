@@ -1,0 +1,26 @@
+{
+  "name": "timestamp",
+  "version": "1.0.0",
+  "description": "timestamp",
+  "main": "express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaheelaKhan1172/timestamp.git"
+  },
+  "author": "raheela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaheelaKhan1172/timestamp/issues"
+  },
+  "homepage": "https://github.com/RaheelaKhan1172/timestamp#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "stylus": "^0.53.0"
+  },
+  "engines": {
+    "node": "4.2.2"
+  }
+}
