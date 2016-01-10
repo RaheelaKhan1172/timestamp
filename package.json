@@ -4,7 +4,7 @@
   "description": "timestamp",
   "main": "express.js",
   "scripts": {
-    "start": "node express.js"
+    "start": "node express"
   },
   "repository": {
     "type": "git",
